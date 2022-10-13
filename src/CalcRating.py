@@ -23,5 +23,4 @@ class CalcRating:
             if x == len(self.data[key]):
                 self.countStudent += 1
             self.rating[key] /= len(self.data[key])
-        print(self)
         return self
