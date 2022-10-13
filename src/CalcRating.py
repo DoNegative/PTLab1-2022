@@ -20,7 +20,7 @@ class CalcRating:
                 if subject[1] >= 90:
                     x += 1
                 self.rating[key] += subject[1]
-            if x==len(self.data[key]):
+            if x == len(self.data[key]):
                 self.countStudent += 1
             self.rating[key] /= len(self.data[key])
         print(self)
