@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
+import yaml
+
 from Types import DataType
 from DataReader import DataReader
-import yaml
 
 
 class TextDataReaderYAML(DataReader):
