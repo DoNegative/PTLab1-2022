@@ -40,4 +40,4 @@ class TestCalcRating:
     def test_calc(self, input_data: tuple[DataType, RatingsType]) -> None:
 
         rating = CalcRating(input_data[0]).calc()
-        assert rating.countStudent==input_data[1]
+        assert rating.countStudent == input_data[1]

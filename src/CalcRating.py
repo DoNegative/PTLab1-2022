@@ -11,7 +11,7 @@ class CalcRating:
         self.rating: RatingType = {}
         self.countStudent: int = 0
 
-    def calc (self) -> RatingType:
+    def calc(self) -> RatingType:
 
         for key in self.data:
             self.rating[key] = 0.0
