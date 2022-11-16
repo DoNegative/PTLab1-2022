@@ -24,7 +24,7 @@
 - yaml
 
 ## UML-диаграмма классов
-
+![UML](https://github.com/DoNegative/PTLab1-2022/blob/main/data/class.png)
 
 ## Выводы
 Выполнив лабораторную работу я познакомился с языком программирования python и средой разработки pyCharm, научился использовать `GitHub Actions` для автоматического тестирования кода с использованием `pytest` и `pycodestyle`.
