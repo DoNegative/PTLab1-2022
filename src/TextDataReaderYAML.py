@@ -15,12 +15,12 @@ class TextDataReaderYAML(DataReader):
         with open(path, encoding='utf-8') as stream:
             file = yaml.safe_load(stream)
             for string in file:
+                print(string)
                 for name in string:
                     self.key = name
                     self.students[self.key] = []
                     for subject in string[name]:
                         for points in subject:
-                            print(points)
                             self.students[self.key].append(
                                 (points, int(subject[points])))
 
