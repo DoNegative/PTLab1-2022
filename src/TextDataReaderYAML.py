@@ -20,6 +20,8 @@ class TextDataReaderYAML(DataReader):
                     self.students[self.key] = []
                     for subject in string[name]:
                         for points in subject:
+                            print(points)
                             self.students[self.key].append(
                                 (points, int(subject[points])))
+
         return self.students
