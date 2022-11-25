@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from src.Types import DataType
-from src.CalcRating import CalcRating
+from src.CountStudent import CountStudent
 import pytest
 
 RatingsType = int
@@ -34,10 +34,10 @@ class TestCalcRating:
     def test_init_calc_rating(self, input_data: tuple[DataType,
                                                       RatingsType]) -> None:
 
-        calc_rating = CalcRating(input_data[0])
+        calc_rating = CountStudent(input_data[0])
         assert input_data[0] == calc_rating.data
 
     def test_calc(self, input_data: tuple[DataType, RatingsType]) -> None:
 
-        rating = CalcRating(input_data[0]).calc()
+        rating = CountStudent(input_data[0]).calc()
         assert rating.countStudent == input_data[1]

@@ -3,6 +3,7 @@ import argparse
 import sys
 
 from CalcRating import CalcRating
+from CountStudent import CountStudent
 from TextDataReaderYAML import TextDataReaderYAML
 
 
@@ -21,7 +22,7 @@ def main():
     students = reader.read(path)
     print("Students: ", students)
 
-    rating = CalcRating(students).calc()
+    rating = CountStudent(students).calc()
     print("StudentCount", rating.countStudent)
 
 
